@@ -1,0 +1,15 @@
+.contact{background-color: orange;
+    position: absolute;
+    width: 80%;
+    height: 35%;
+    margin-left: 50px;
+    margin-top: 10%;
+    font-size: 20px;
+    }
+    .adr{
+        margin-top: 50px;
+    color: white;
+    width: 30%;
+    float: left 
+
+    }

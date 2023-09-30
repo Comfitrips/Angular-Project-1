@@ -1,0 +1,39 @@
+<div class="container"> 
+  
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+            
+    <form  [formGroup]="formvalue" >
+        <div class="mb-3" >
+          <label for="exampleInputEmail1" class="form-label">From:</label>
+          <br>
+          <input type="text" formControlName="email"  placeholder="Mumbai" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+          
+         <div class="text-danger" *ngIf="formvalue.controls['email'].hasError('required')"> City Name is required </div>
+       
+        </div>
+        <br>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">To:</label>
+          <br>
+          <input type="text"  formControlName="password" placeholder="Paris" class="form-control" id="exampleInputPassword1">
+        
+          <!-- <div class="text-danger" *ngIf="formvalue.controls['password'].hasError('required')"> Password is required </div> -->
+          <label ngClass="formvalue.controls['password'].hasError('required') ">
+            City name is must</label>
+        </div>
+        <br>
+        <button type="submit" [disabled]="!formvalue.valid" routerLink="/book" class="btn btn-light "> Search </button>
+        <p routerLink="/home" style="font-size: 20px;" class="btn btn-link">Go Back To Home</p>
+      </form> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="image-container">
+  <img src="/assets/flight1.jpg" >
+</div>
+<div >
+  <img class="ig1" src="/assets/flight2.jpg" >
+</div>

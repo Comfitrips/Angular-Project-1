@@ -1,0 +1,129 @@
+<div class="container">
+
+<div class="logo">
+    <img [src]="header">
+    <img class="image1" [src]="header3">   
+      <b> <span> {{slogan}} </span>  </b>   
+</div>
+
+<div class="navbar"> 
+<div class="sitename">
+ <b>  {{sitename}} </b>
+  </div>  
+  <div class="sitemenu">
+      <nav>
+        <b> <button><a routerLink="/logout"> Logout </a> </button></b> 
+        <b> <button><a routerLink="/holidays"> Holidays </a></button> </b>
+        <b> <button><a routerLink="/flight"> Flights </a></button> </b> 
+       <b> <button><a routerLink="/dashboard">  Dashboard</a>  </button> </b> 
+      </nav>
+  </div>
+</div>
+<ngb-carousel *ngIf="images">
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper"> 
+			<img id="a" [src]="t1" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<pre><b>
+Having made the festive season memorable, 
+I decided to visit Dubai — From the Desert 
+safari, 
+to the top of Burj Khalifa 				
+To make the trip work smooth,
+I book my family package with 
+ComfiTrips.</b>
+			  </pre>
+			<b> <h3>Tourist-XYZ</h3> </b>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img id="a" [src]="t2" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+				<pre><b>
+'The Best Part Of Traveling Solo, 
+Is That You Do Not Return Solo'</b>			   
+			  </pre>>
+	<b>	 <h3> Tourist-ABC </h3></b>	
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img id="a" [src]="t3" alt="Random third slide" />
+		</div>
+		<div class="carousel-caption">	
+			<pre><b>
+Describing his experience 
+as a journey of self-discovery, 
+he shares his amazing story with us. 
+Having booked his Flights to Paris from 
+ComfiTrips, 
+He was more than satisfied. </b>
+			  </pre>>
+			<b><h3>Tourist-OMG </h3></b>	
+		</div>
+	</ng-template>
+</ngb-carousel>
+
+
+<div class="row">
+	<div class="column">
+	  <img src="/assets/airportlook1.png" alt="Snow" style="width:100%;">
+	</div>
+	<div class="column">
+	  <img src="/assets/airportlook2.png" alt="Forest" style="width:100%;">	
+	</div>
+	
+  </div>
+  
+  <p>Guid to Some Trendy Fashion Looks You may Try on Airport</p>
+  <aside>
+	<mat-sidenav-container>
+		<mat-sidenav  [(opened)]="opened" mode="side">
+		<mat-list-item><a routerLink="/contact"style="color: rgb(144, 13, 144);font-size: 20px; " >Contact Us</a> </mat-list-item><br><br>
+		<mat-list-item><a routerLink="/privacy"style="color: rgb(144, 13, 144);font-size: 20px; ">Privacy-Policy</a> </mat-list-item><br><br>
+		<mat-list-item><a routerLink="/blog" style="color: rgb(144, 13, 144);font-size: 20px; ">Blog</a> </mat-list-item>	
+		</mat-sidenav>
+		<mat-sidenav-content>
+	<button mat-button (click)="opened=!opened"><mat-icon>menu</mat-icon> </button>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
+</aside>
+
+  
+  <div class="backgroundimg"> 
+    <div class="offer">
+    
+    <img class="ig0" routerLink="/holidays" [src]="offer">
+     <i> Refreshing Holiday Pacakges  </i>
+	</div>
+
+	
+	<div style="font-size: 30px; margin-top: 80px; "> Feedback </div>
+	<textarea  title="feedback" style="width: 250px; height: 300px;margin-top: 40px; " >Your Feedback is Important for us</textarea>
+	<div >
+	<input (click)="thank()" type="button"   value="Submit" style="width: 120px; height: 50px;">
+
+ </div>
+    </div>
+
+
+<div class="doc">
+	<b>- Quick Review of Important Documents for Air Travel </b>
+	<ul style=" width: 700px; margin-left: 30px; margin-top: 10px;">
+		<li>ID card  and Passport for International Travellers</li>
+		<li>Tickets - Hard copy / soft copy based on the Airline’s policy</li>
+		<li> Boarding Pass - If available or you can print it at the Check-in counters at the Self Kiosk counters at the Airport. </li>
+		<li>Mobile phones - with all the necessary travel apps.</li>
+	</ul>
+
+</div>
+	
+    
+  </div>
+
+  
+    
+    <router-outlet></router-outlet>  

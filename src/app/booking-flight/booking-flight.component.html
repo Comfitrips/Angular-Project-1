@@ -1,0 +1,91 @@
+<h1> Available Flights  <p routerLink="/home" style="font-size: 20px;" class="btn btn-link">Go Back To Home</p></h1>
+
+<ng-container *ngFor="let p of flights"  >
+    <div class="name-container" ><h5>{{p.name}}</h5></div>
+    <div class="detail-container">
+     <div class="detail" ><h5> {{p.from}}</h5></div>
+     <div class="detail" ><h5> {{p.time}}</h5></div>
+     <div class="detail" ><h5> {{p.to}}</h5></div>
+     <div class="detail" [ngStyle]="{color: p.available === 'Tickets Available' ? 'Green' : 'Red' }" ><h5>  {{p.available}}</h5></div>
+     <div class="detail" ><h5>  {{p.Price}}</h5></div>
+</div>
+
+<div class="options">
+    <button class="btn btn-success" (click)="toggle()" >{{buttonName}}</button>
+    <button class="btn btn-warning" routerLink="/form" > Book Now </button>
+</div>
+
+<div *ngIf="show">
+    <table>
+        <th> Mumbai to Paris , 12 Aug</th>
+        <tr>
+            <td>02:10
+
+                Sat, 12 Aug 23
+                Terminal 2
+                
+                Mumbai, India</td>
+                <td>09 h 30 m
+
+                </td>
+                <td> 08:10
+
+                    Sat, 12 Aug 23
+                    Terminal 2E
+                    
+                    Paris, France</td>
+                   
+        </tr>
+        
+            </table>
+</div>
+</ng-container>
+<ng-container *ngFor="let a of flight1"  >
+    <div class="name-container" ><h5>{{a.namen}}</h5></div>
+    <div class="detail-container">
+     <div class="detail" ><h5> {{a.fromf}}</h5></div>
+     <div class="detail" ><h5> {{a.timet}}</h5></div>
+     <div class="detail" ><h5> {{a.too}}</h5></div>
+     <div class="detail" [ngStyle]="{color: a.availablea === 'Tickets Available' ? 'Green' : 'Red' }" ><h5>  {{a.availablea}}</h5></div>
+     <div class="detail" ><h5>  {{a.Pricep}}</h5></div>
+</div>
+
+<div class="options">
+    <button class="btn btn-success" (click)="toggle1()" >{{buttonName1}}</button>
+    <button class="btn btn-warning" routerLink="/form" > Book Now </button>
+</div>
+<div *ngIf="show1">
+    <table>
+        <th> Mumbai to Paris , 12 Aug</th>
+        <tr>
+            <td>03:00
+                Sat, 12 Aug 23
+                Terminal 2       
+                Mumbai, India</td>
+                <td>05 h 40 m </td>
+                <td> 06:10
+                    Sat, 12 Aug 23
+                    Terminal 3           
+                    Cairo, Egypt</td>
+                    <td>Change of planes-11h 5m Layover in Cairo</td>
+                    <td>17:15
+                        Sat, 12 Aug 23
+                        Terminal 3               
+                        Cairo, Egypt</td>
+                        <td>03 h 50 m
+
+                        </td>
+                        <td>21:05
+
+                            Sat, 12 Aug 23
+                            Terminal 1
+                            Paris, France</td>
+        </tr>
+        
+            </table>
+</div>
+
+</ng-container>
+    
+
+ 

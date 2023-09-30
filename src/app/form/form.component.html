@@ -1,0 +1,82 @@
+<section class="vh-100 gradient-custom">
+    <div class="container ">
+      
+          <div class=" card-registration" style="border-radius: 15px;">
+
+                <form [formGroup]="FlightBook"  (ngSubmit)="signup()" > 
+  
+                <div class="row">
+        
+                    <h2 style="color: whitesmoke;">Flight Search</h2>
+                    <div class="form-outline">
+                        <label class="form-label"  for="Depart">Depart</label><br>
+                      <input  placeholder="Date" type="text" id="Depart" class="form-control " />           
+
+                  </div>
+                
+  <br><br>
+                    <div class="form-outline">
+                        <label class="form-label" for="lastName">Return</label><br>  
+                        <select>
+                          <option selected="selected" value="one">One Way</option>
+                          <option  value="one">Round Trip</option>
+                        </select>
+                             <br>
+                     
+  
+                </div>
+  
+                <div class="row">
+  
+                    <div class="form-outline">
+                        <label class="form-label" for="emailAddress">Adults</label><br>
+                      <input formControlName="email"  type="number" id="emailAddress" class="form-control form-control-lg" />
+  
+                  </div>
+               
+  
+                    <div class="form-outline">
+                        <label class="form-label" for="phoneNumber">Children[2-11]</label><br>
+                      <input formControlName="phoneno"  type="number" id="phoneNumber" class="form-control form-control-lg" />
+                   
+  
+                  </div>
+                
+  
+                    <div class="form-outline flex-fill mb-0">
+                        <label class="form-label" for="form3Example4c">Infants</label><br>
+                      <input formControlName="password"  type="number" id="form3Example4c" class="form-control" />
+                 
+                  </div>
+
+                
+<br>
+                  <div class="form-outline">
+                    <label class="form-label" for="Cabin">Cabin:</label> <br>
+                      <select  >
+                      <option selected="selected" value="A">Economy</option>
+                      <option  value="B">Business</option>
+                      <option  value="C">First Class</option>
+                    </select>
+                  </div>  <br><br>
+                     <div class="form-outline">
+                  <label class="form-label" for="payment">How would you like to pay:</label>  <br>
+                  
+                  <select id="pay" name="payment" >
+                  <option selected="selected" value="Upi">UPI</option>
+                  <option  value="Credit">Credit/Debit Card</option>
+                  <option  value="NetBanking">NetBanking</option>
+                </select> 
+              </div>
+                <br>
+                  <br>
+
+                    <input style="margin-top: 30px;" class="btn btn-success"  type="submit" value="Book" />  
+                    <p routerLink="/home" style="font-size: 20px;" class="btn btn-link">Go Back To Home</p>
+                  
+                  </div>
+               
+    </div>     
+
+ 
+ 

@@ -1,0 +1,77 @@
+{
+  "FlightBook": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "Depart": "12-11-2023 ",
+      "return": "One Way",
+      "Adults": "1 ",
+      "Children": "1",
+      "Cabin": "First Class ",
+      "How would you like to pay:": "UPI"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ],
+  "SignupUsers": [
+    {
+      "firstname": "pooja ",
+      "lastname": "korde",
+      "gender": "Female",
+      "email": "p@gmail.com",
+      "phoneno": "8965412307",
+      "password": "lkjhgf456",
+      "repeat": "lkjhgf456",
+      "id": 2
+    },
+    {
+      "firstname": "prachiti",
+      "lastname": "bhalerao",
+      "gender": "Female",
+      "email": "vibha@gmail.com",
+      "phoneno": "9876543210",
+      "password": "poiuytre",
+      "repeat": "poiuytre",
+      "id": 3
+    },
+    {
+      "firstname": "Manisha",
+      "lastname": "Korde",
+      "gender": "Female",
+      "email": "Manisha@gmail.com",
+      "phoneno": "1234560789",
+      "password": "mnbvcxz1",
+      "repeat": "mnbvcxz1",
+      "id": 4
+    }
+  ],
+  "User": [
+    {
+      "name": "Manisha",
+      "gender": "Female",
+      "email": "Manisha@gmail.com",
+      "phoneno": "1234560789",
+      "id": 1
+    },
+    {
+      "name": "prachiti",
+      "gender": "Female",
+      "email": "vibha@gmail.com",
+      "phoneno": "9876543210",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+<h2> Current Users  <p routerLink="/home" style="font-size: 20px;" class="btn btn-link">Go Back To Home</p></h2>
+
+<div class="row">
+    <div class="col-12">
+<table  class=" table table-bordered">
+    <thead>
+        <tr>
+        <th >User</th>
+        <th> Name</th>
+        <th>  Gender </th>
+        <th>  Email</th>
+        <th>  Phone-No.</th>
+        <th>  Action </th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let user of userarry; let Users = index">
+<td >{{Users+1}} </td>
+<td> {{user.name}} </td>
+<td> {{user.gender}} </td>
+<td> {{user.email}}</td>
+<td> {{user.phoneno}}</td>
+<td> <i class="fa fa-trash" aria-hidden="true"  (click)="onDelete(user)"></i>
+</td>
+
+
+        </tr>
+    </tbody>
+</table>
+
+    </div>
+</div>
+
+<h2> Latest Flight Booking Details </h2>  
+
+   
+
+<ng-container >
+<div  >
+    <table style=" font-family: 1px solid #dddddd;   margin-bottom: 20px;
+    margin-left: 5px;
+    width: 75%;">
+        <th style="background-color: rgba(188, 187, 187, 0.745); color: rgb(54, 53, 53)"> Mumbai to Paris,12 Aug</th>
+        <tr style=" background-color: #dddddd;
+        border: 1px solid black;" >
+
+<td style=" border: 1px solid #040404;
+text-align: left;
+padding: 8px;" > Air France </td>
+            <td style=" border: 1px solid #040404;
+            text-align: left;
+            padding: 8px;" >02:10
+
+                Sat, 12 Aug 23
+                Terminal 2
+                
+                Mumbai, India</td>
+                <td style=" border: 1px solid #040404;
+                text-align: left;
+                padding: 8px;" >09 h 30 m
+
+                </td>
+                <td style=" border: 1px solid #040404;
+                text-align: left;
+                padding: 8px;" > 08:10
+
+                    Sat, 12 Aug 23
+                    Terminal 2E
+                    
+                    Paris, France</td>
+                    <td style=" border: 1px solid #040404;
+                text-align: left;
+                padding: 8px;" > Date:12-11-2023
+
+                </td>
+                <td style=" border: 1px solid #040404;
+                text-align: left;
+                padding: 8px;" >Adult: 1
+
+                </td>
+                <td style=" border: 1px solid #040404;
+                text-align: left;
+                padding: 8px;" >Children: 1
+
+                </td>
+                <td style=" border: 1px solid #040404;
+                text-align: left;
+                padding: 8px;" >Cabin: First Class
+
+                </td>
+
+                    <td style=" border: 1px solid #040404;
+                text-align: left;
+                padding: 8px;" > <button class="btn btn-danger" > Cancel </button></td>
+                   
+        </tr>
+        
+            </table>
+</div>
+</ng-container>
+<hr>
+<h3 (click)="onClick()" > <p class="btn btn-link" style="font-size: 30px; background-color: rgb(165, 235, 135);">My Travel History </p>  </h3> 
+{{clickmsg}}
+
+
+<img src="/assets/dashboard1.jpg" style="width:600px; margin-left: 30%;margin-bottom: 50px; position: absolute;">
+
+<h3 style="color: rgb(38, 72, 209);margin-left: 30%;margin-top: 13%; position: relative;">we value your time....Happy Journey</h3>
